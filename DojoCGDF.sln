@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DojoCGDF.Api", "DojoCGDF.Api\DojoCGDF.Api.csproj", "{096F4149-35F0-4729-86AF-49BEB2E269CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DojoCGDF.Core", "DojoCGDF.Core\DojoCGDF.Core.csproj", "{AAAF281F-4872-4D4B-A21E-58A0815DA680}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{096F4149-35F0-4729-86AF-49BEB2E269CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{096F4149-35F0-4729-86AF-49BEB2E269CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{096F4149-35F0-4729-86AF-49BEB2E269CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{096F4149-35F0-4729-86AF-49BEB2E269CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAAF281F-4872-4D4B-A21E-58A0815DA680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAAF281F-4872-4D4B-A21E-58A0815DA680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAAF281F-4872-4D4B-A21E-58A0815DA680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAAF281F-4872-4D4B-A21E-58A0815DA680}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2587F79-5754-4004-9009-0ACAC331816B}
+	EndGlobalSection
+EndGlobal
