@@ -54,7 +54,14 @@ namespace DojoCGDF.Api.Controllers
             return Ok();
         }
 
-        [HttpPost("remover")]
+        [HttpPut("atualizar")]
+        public IActionResult AtualizarPublicacao(PublicacaoDTO publicacaoDTO)
+        {
+            _publicacaoService.AtualizarPublicacao(publicacaoDTO);
+            return Ok();
+        }
+
+        [HttpDelete("remover")]
         public IActionResult RemoverPublicacao(string id)
         {
             _publicacaoService.RemoverPublicacao(id);
