@@ -83,6 +83,8 @@ namespace DojoCGDF.Api
             // e adicionando os dados no banco em memória
             Dados.Adicionar(context);
 
+            app.UseCors();
+
             // Verifica qual rota deve ser utilizada para a URL.
             // Adiciona metadados para serem usados
             // nos próximos middlewares
