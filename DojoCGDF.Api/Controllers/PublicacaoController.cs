@@ -1,8 +1,10 @@
 ﻿using DojoCGDF.Core.Domain.DTO;
 using DojoCGDF.Core.Domain.Services;
 using DojoCGDF.Core.Infrastructure;
+using DojoCGDF.Core.Infrastructure.Config.Seeds;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace DojoCGDF.Api.Controllers
 {
@@ -72,6 +74,13 @@ namespace DojoCGDF.Api.Controllers
         public IActionResult LikePublicacao(string id)
         {
             _publicacaoService.LikePublicacao(id);
+            return Ok();
+        }
+
+        [HttpGet("limpar-dados")]
+        public IActionResult LimparDados()
+        {
+            _publicacaoService.LimparDados();
             return Ok();
         }
     }

@@ -1,6 +1,7 @@
 ﻿using DojoCGDF.Core.Domain.DTO;
 using DojoCGDF.Core.Domain.Entities;
 using DojoCGDF.Core.Infrastructure;
+using DojoCGDF.Core.Infrastructure.Config.Seeds;
 using Microsoft.Extensions.Hosting;
 using System.IO;
 
@@ -68,6 +69,25 @@ namespace DojoCGDF.Core.Domain.Services
             publicacao.Like();
             _context.Publicacoes.Update(publicacao);
             _context.SaveChanges();
+        }
+
+        public async void LimparDados()
+        {
+            _context.Publicacoes.RemoveRange(_context.Publicacoes);
+            await _context.SaveChangesAsync();
+            Dados.Adicionar(_context);
+
+            var uploadPath = Path.Combine(_hostEnvironment.ContentRootPath, "Uploads");
+
+            var directory = new DirectoryInfo(uploadPath);
+
+            foreach (var file in directory.GetFiles())
+            {
+                if (!file.Name.Contains("foto"))
+                {
+                    file.Delete();
+                }
+            }
         }
     }
 }

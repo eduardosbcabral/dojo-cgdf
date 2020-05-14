@@ -11,5 +11,6 @@ namespace DojoCGDF.Core.Domain.Services
         void AtualizarPublicacao(PublicacaoDTO publicacaoDTO);
         void RemoverPublicacao(string id);
         void LikePublicacao(string id);
+        void LimparDados();
     }
 }
